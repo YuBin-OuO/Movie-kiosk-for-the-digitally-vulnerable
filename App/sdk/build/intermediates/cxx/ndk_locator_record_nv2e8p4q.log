@@ -1,0 +1,86 @@
+[
+  {
+    "level_": 0,
+    "message_": "android.ndkVersion from module build.gradle is [not set]",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -503305387
+  },
+  {
+    "level_": 0,
+    "message_": "android.ndkPath from module build.gradle is not set",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 288882716
+  },
+  {
+    "level_": 0,
+    "message_": "ndk.dir in local.properties is not set",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 993343909
+  },
+  {
+    "level_": 0,
+    "message_": "Not considering ANDROID_NDK_HOME because support was removed after deprecation period.",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1438809317
+  },
+  {
+    "level_": 0,
+    "message_": "sdkFolder is C:\\Users\\CHO_YUBIN\\AppData\\Local\\Android\\Sdk",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -378676043
+  },
+  {
+    "level_": 0,
+    "message_": "Because no explicit NDK was requested, the default version [23.1.7779620] for this Android Gradle Plugin will be used",
+    "file_": "",
+    "tag_": "",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -505187028
+  }
+]

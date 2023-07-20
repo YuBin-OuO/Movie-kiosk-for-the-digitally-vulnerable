@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\CHO_YUBIN\Desktop\HH\Kiosker\App2\sdk\.cxx\Debug\2y94v28w\x86'
+ninja: no work to do.

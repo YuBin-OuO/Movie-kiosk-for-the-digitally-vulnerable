@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <Button
+        android:id="@+id/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/previous_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="  이전 화면으로  "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0"
+        app:layout_constraintRight_toLeftOf="@+id/home_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/home_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="  처음 화면으로  "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0"
+        app:layout_constraintRight_toRightOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/person_count_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:bufferType="spannable"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="관람하실 인원을 선택하세요."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline01"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/adult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:gravity="left"
+        android:text="성인"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayout1"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/person_count_notice"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/teen"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/adult"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/teen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:gravity="left"
+        android:text="청소년"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayout2"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/finish_button"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/teen"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <Button
+            android:id="@+id/tbtn0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:onClick="onClick"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/tbtn9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="   완료   "
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

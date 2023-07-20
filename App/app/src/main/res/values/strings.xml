@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kiosk</string>
+    <string name="print">예매 티켓 출력</string>
+    <string name="ticket">티켓 구매</string>
+</resources>

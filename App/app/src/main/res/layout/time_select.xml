@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <Button
+        android:id="@+id/previous_button"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/previous_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  이전 화면으로  "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/home_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  처음 화면으로  "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/time_select_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="관람하실 시간을 선택하세요."
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textColor="@color/black"
+        android:bufferType="spannable"
+        app:layout_constraintBottom_toTopOf="@+id/guideline01"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/time_button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="10:00 ~ 11:30"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/time_button02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="10:30 ~ 12:00"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp" />
+
+        <Button
+            android:id="@+id/time_button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="11:30 ~ 13:00"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp" />
+
+        <Button
+            android:id="@+id/time_button04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="12:00 ~ 13:30"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/time_button05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="14:00 ~ 15:30"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/time_button06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_click"
+            android:layout_marginVertical="5dp"
+            android:fontFamily="@font/notosanskr_bold"
+            android:text="14:30 ~ 16:00"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   완료   "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

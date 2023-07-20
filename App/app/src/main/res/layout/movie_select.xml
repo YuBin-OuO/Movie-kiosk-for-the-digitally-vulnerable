@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <Button
+        android:id="@+id/base_button"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   기본 화면으로 보기   "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  처음 화면으로  "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/movie_select_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="예매하실 영화를 선택하세요."
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textColor="@color/black"
+        android:bufferType="spannable"
+        app:layout_constraintBottom_toTopOf="@+id/guideline01"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline01">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline01" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/admiral_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:id="@+id/admiral_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="명량" />
+
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/architecture_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/architecture_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="건축학개론" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/avengers_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/avengers_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="어벤져스" />
+
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/extreme_button"
+                android:background="@drawable/button_click"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:drawableTop="@drawable/extreme_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="극한직업" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/frozen_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/frozen_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="겨울왕국" />
+
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/gift_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/gift_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7번방의 선물" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <Button
+            android:paddingTop="20dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_margin="5dp"
+            android:id="@+id/mission_button"
+            android:fontFamily="@font/notosanskr_bold"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:background="@drawable/button_click"
+            android:drawableTop="@drawable/mission_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="미션 임파서블" />
+
+
+            <Button
+                android:paddingTop="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_margin="5dp"
+                android:id="@+id/thieves_button"
+                android:fontFamily="@font/notosanskr_bold"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_click"
+                android:drawableTop="@drawable/thieves_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="도둑들" />
+
+        </TableRow>
+
+    </TableLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   완료   "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

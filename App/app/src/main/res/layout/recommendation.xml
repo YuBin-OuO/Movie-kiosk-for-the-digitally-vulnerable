@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <Button
+        android:id="@+id/home_button"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  처음 화면으로  "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintRight_toRightOf="@+id/ok_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/recommendation_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="추천 영화"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/guideline01"
+        app:layout_constraintLeft_toLeftOf="@id/ok_button"
+        app:layout_constraintRight_toRightOf="@id/ok_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ImageView
+        android:id="@+id/recommendation_poster"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/ok_button"
+        app:layout_constraintRight_toRightOf="@id/ok_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline01"
+        app:layout_constraintBottom_toTopOf="@+id/guideline02"
+        app:srcCompat="@drawable/avengers" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/estimation_message"
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="고객님은 [연령대] [성별]으로 추정되었습니다."
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/recommendation_message"
+        app:layout_constraintLeft_toLeftOf="@id/ok_button"
+        app:layout_constraintRight_toRightOf="@id/ok_button"
+        app:layout_constraintTop_toBottomOf="@+id/recommendation_poster" />
+
+    <TextView
+        android:id="@+id/recommendation_message"
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="[장르] [영화 제목] 어떠세요?"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/ok_button"
+        app:layout_constraintRight_toRightOf="@id/ok_button"
+        app:layout_constraintTop_toBottomOf="@+id/estimation_message" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="   확인   "
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

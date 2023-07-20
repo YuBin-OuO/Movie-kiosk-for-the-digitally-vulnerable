@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <TextView
+        android:id="@+id/camera_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="맞춤 서비스 제공을 위해\n고객님의 얼굴 인식이 필요합니다."
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:bufferType="spannable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <Button
+        android:fontFamily="@font/notosanskr_bold"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/face_detection"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="얼굴 인식"
+        android:layout_margin="10dp"
+        android:padding="80dp"
+        android:textColor="@color/black"
+        android:background="@drawable/button"
+        app:layout_constraintTop_toBottomOf="@id/camera_notice"
+        app:layout_constraintBottom_toTopOf="@id/camera_notice2"/>
+
+    <TextView
+        android:id="@+id/camera_notice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="카메라를 바라보며\n상단의 버튼을 눌러주세요."
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

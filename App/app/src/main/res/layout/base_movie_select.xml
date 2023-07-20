@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fontFamily="@font/font"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp">
+
+    <Button
+        android:id="@+id/easy_button"
+        android:background="@drawable/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   쉬운 화면으로 보기   "
+        android:fontFamily="@font/notosanskr_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/home_button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="  처음 화면으로  "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline0"
+        app:layout_constraintRight_toRightOf="@+id/finish_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/movie_select_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:bufferType="spannable"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="예매하실 영화를 선택하세요."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline01"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintLeft_toLeftOf="@id/finish_button"
+        app:layout_constraintRight_toRightOf="@id/finish_button"
+        app:layout_constraintTop_toBottomOf="@+id/guideline01">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/poster1"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/admiral" />
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="명량"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater1"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="1관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster1"
+                    app:layout_constraintRight_toLeftOf="@id/time1"
+                    app:layout_constraintTop_toBottomOf="@id/title1" />
+
+                <TextView
+                    android:id="@+id/time1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="10:00 ~ 11:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/poster2"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/architecture" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="건축학개론"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater2"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="2관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster2"
+                    app:layout_constraintRight_toLeftOf="@id/time2"
+                    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+                <TextView
+                    android:id="@+id/time2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="10:00 ~ 11:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster3"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/avengers" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="어벤져스"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater3"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="3관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster3"
+                    app:layout_constraintRight_toLeftOf="@id/time3"
+                    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+                <TextView
+                    android:id="@+id/time3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="11:30 ~ 13:00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster4"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/frozen" />
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="겨울왕국"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater4"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="4관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster4"
+                    app:layout_constraintRight_toLeftOf="@id/time4"
+                    app:layout_constraintTop_toBottomOf="@id/title4" />
+
+                <TextView
+                    android:id="@+id/time4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="11:30 ~ 13:00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater4"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster5"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/thieves" />
+
+                <TextView
+                    android:id="@+id/title5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="도둑들"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater5"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="5관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster5"
+                    app:layout_constraintRight_toLeftOf="@id/time5"
+                    app:layout_constraintTop_toBottomOf="@id/title5" />
+
+                <TextView
+                    android:id="@+id/time5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="12:00 ~ 13:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater5"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster6"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/extreme" />
+
+                <TextView
+                    android:id="@+id/title6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="극한직업"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater6"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster6"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="6관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster6"
+                    app:layout_constraintRight_toLeftOf="@id/time6"
+                    app:layout_constraintTop_toBottomOf="@id/title6" />
+
+                <TextView
+                    android:id="@+id/time6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="13:00 ~ 14:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater6"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title6" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster7"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/gift" />
+
+                <TextView
+                    android:id="@+id/title7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="7번방의 선물"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater7"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster7"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="7관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster7"
+                    app:layout_constraintRight_toLeftOf="@id/time7"
+                    app:layout_constraintTop_toBottomOf="@id/title7" />
+
+                <TextView
+                    android:id="@+id/time7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="13:00 ~ 14:30"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater7"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/movie8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:background="@drawable/button_click"
+                android:clickable="true"
+                android:padding="5dp">
+
+
+                <ImageView
+                    android:id="@+id/poster8"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.3"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/title8"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/mission" />
+
+                <TextView
+                    android:id="@+id/title8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="미션 임파서블"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toTopOf="@id/theater8"
+                    app:layout_constraintHorizontal_weight="0.7"
+                    app:layout_constraintLeft_toRightOf="@id/poster8"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/theater8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:text="8관"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.1"
+                    app:layout_constraintLeft_toRightOf="@id/poster8"
+                    app:layout_constraintRight_toLeftOf="@id/time8"
+                    app:layout_constraintTop_toBottomOf="@id/title8" />
+
+                <TextView
+                    android:id="@+id/time8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/notosanskr_bold"
+                    android:paddingRight="30dp"
+                    android:text="13:30 ~ 15:00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_weight="0.6"
+                    app:layout_constraintLeft_toRightOf="@id/theater8"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/title8" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </TableLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <Button
+        android:id="@+id/finish_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:fontFamily="@font/notosanskr_bold"
+        android:padding="10dp"
+        android:text="   완료   "
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
