@@ -26,8 +26,6 @@
 - 영화 소비자 행태 조사(한국 영화 진흥 위원회)의 나이와 성별에 따른 선호 장르를 영화 추천 서비스에 활용
 PC의 서버에서 딥러닝 모델을 이용해 추출한 나이와 성별 데이터를 소켓 통신을 통해 클라이언트인 키오스크로 보냄
 → 이 데이터를 기반으로 영화 추천 서비스와 맞춤 화면을 제공
-1) 40대 이하로 추정될 경우, 일반 화면으로 전환
-2) 40대 이상으로 추정될 경우, 시니어 화면으로 전환
 ### UI 🎨 
 일반 화면은 한 화면에 여러 정보들이 집약되어 있고 인원 선택 시 한 눈에 파악하기 어려워 혼란을 줄 수 있음  
 → 이를 지양하고자 시니어용 화면에는 한 화면당 하나의 선택만을 할 수 있도록 구성하여 (최대한 적은 정보를 담아) 혼란을 최소화할 수 있도록 함
@@ -37,7 +35,7 @@ PC의 서버에서 딥러닝 모델을 이용해 추출한 나이와 성별 데�
 ![학술제  키오스크 UI_수정_page-0001](https://github.com/user-attachments/assets/e64c4392-54bc-4104-893d-09cc566f8937)
 ![학술제  키오스크 UI_수정_page-0002](https://github.com/user-attachments/assets/3babcfd0-f904-4db4-998e-c46b046d3d83)
 ### 시연 영상 📹
-<iframe width="971" height="546" src="https://www.youtube.com/embed/b0kLY3HeHrA" title="얼굴 인식 기반 디지털 취약 계층을 위한 맞춤형 영화 예매 키오스크 (2022 SCH AI·SW Festival) 시연 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+[![Video Label](https://ifh.cc/g/9RRtSf.jpg)](https://youtu.be/b0kLY3HeHrA?t=0s)
 
 ### 기술 채택 이유 🔧 
 #### 안드로이드 어플리케이션
