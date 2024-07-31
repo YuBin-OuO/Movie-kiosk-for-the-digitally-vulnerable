@@ -5,11 +5,11 @@
 ## 🧑‍💻 개발 인원
 |<img src="https://avatars.githubusercontent.com/u/121855323?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/87566401?v=4" width="150" height="150"/>|
 |:-:|:-:|
-|JeonganChoi<br/>[@jeongan-choi](https://github.com/jeongan-choi)|Cho Yubin✨<br/>[@YuBin-OuO](https://github.com/YuBin-OuO)|
+|최정안<br/>[@jeongan-choi](https://github.com/jeongan-choi)|조유빈<br/>[@YuBin-OuO](https://github.com/YuBin-OuO)|
 ## 👤 내 역할
 - Java로 안드로이드 키오스크 어플리케이션 개발
 - UI/UX 디자인 및 구현
-- OpenCV 활용 얼굴 인식 기능 추가
+- OpenCV 활용 얼굴 인식 기능 구
 - 캠(서버) - 키오스크 어플리케이션(클라이언트) 간 TCP/IP 소켓 통신 구현
 ## 🛠️ 사용 언어 및 기술
 - 키오스크 어플리케이션  
