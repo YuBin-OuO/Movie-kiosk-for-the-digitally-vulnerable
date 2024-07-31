@@ -2,8 +2,10 @@
 「2022 SCH AI·SW Festival」 우수상 수상작
 ## 🗓️ 개발 기간
 2022/10/20 ~ 2022/11/5
-## 🧑‍💻 프로젝트 규모
-2인
+## 🧑‍💻 개발 인원
+|<img src="https://avatars.githubusercontent.com/u/121855323?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/87566401?v=4" width="150" height="150"/>|
+|:-:|:-:|
+|JeonganChoi<br/>[@jeongan-choi](https://github.com/jeongan-choi)|Cho Yubin✨<br/>[@YuBin-OuO](https://github.com/YuBin-OuO)|
 ## 👤 내 역할
 - Java로 안드로이드 키오스크 어플리케이션 개발
 - UI/UX 디자인 및 구현
