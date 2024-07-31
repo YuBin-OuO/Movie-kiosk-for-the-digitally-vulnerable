@@ -1,8 +1,8 @@
 # 🎬 얼굴 인식 기반 디지털 취약 계층을 위한 맞춤형 영화 예매 키오스크
 「2022 SCH AI·SW Festival」 우수상 수상작
-## 🗓️ 개발 기간
+## 🗓️ 프로젝트 기간
 2022/10/20 ~ 2022/11/5
-## 🧑‍💻 개발 인원
+## 🧑‍💻 프로젝트 인원
 |<img src="https://avatars.githubusercontent.com/u/121855323?v=4" width="150" height="150"/>|<img src="https://avatars.githubusercontent.com/u/87566401?v=4" width="150" height="150"/>|
 |:-:|:-:|
 |최정안<br/>[@jeongan-choi](https://github.com/jeongan-choi)|조유빈<br/>[@YuBin-OuO](https://github.com/YuBin-OuO)|
